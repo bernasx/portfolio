@@ -15,8 +15,6 @@ body {
     min-height: calc(100vh - 128px); /* 128px is the fullscreen height of the footer and navbar combined. */
 }
 
-
-
 a {
   color: inherit;
   text-decoration: none;

@@ -19,6 +19,7 @@ module.exports = {
       'port-light-green':'#25C28D',
       'port-dark-green':'#20AF82',
       'port-faded-gray':'#8E8E8E',
+      'port-light-gray': '#DBDBDB',
       'port-superlight-green':'#E0F2EF',
       'port-dark-gray':'#292B2E',
       'port-link-blue':'#7AB8F6',

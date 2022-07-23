@@ -44,7 +44,7 @@ const Home: NextPage = () => {
         <div className='flex flex-col justify-start items-center md:mt-40 mt-12 md:mb-8'>
           <Image src="/mainphoto.png" width={212} height={212} alt='Photo of Bernardo' className='rounded-full'></Image>
           <h1 className='mt-4 text-2xl text-port-dark-green'>{t('about:about_me')}</h1>
-          <p className='mt-4 text-center break-words w-3/4 max-w-xs'>
+          <p className='mt-4 text-xl text-center break-words w-3/4 max-w-xs'>
           {t('about:about_degree')} <a href="https://istec-porto.pt/" target="_blank" rel="noreferrer" className='text-port-link-blue hover:text-port-link-blue-hover'>@istec</a>.
             <br />
             <br />
@@ -59,10 +59,10 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className='flex flex-col justify-start  items-center md:mt-28 mt-12 mb-8'>
+        <div className='flex flex-col justify-start  items-center md:mt-24 mt-12 mb-4'>
           <h1 className='mt-4 text-2xl text-port-dark-green'>{t('about:about_portfolio')}</h1>
 
-          <ul className='md:mt-4 max-w-ws mr-4 flex flex-col items-end mb-8'>
+          <ul className='md:mt-4 max-w-ws mr-4 flex flex-col items-end mb-4'>
 
             <li className='break-words text-right flex items-center'>
               <div className='max-w-md'>
@@ -106,7 +106,8 @@ const Home: NextPage = () => {
 
           </ul>
 
-          <Image src="/adminpanel.gif" width={450} height={240} alt='Gif of Admin Panel' className='rounded-xl'></Image>
+          <Image id='adminpanelgif' src="/adminpanel.gif" width={540} height={288} alt='Gif of Admin Panel' className='rounded-xl'></Image>
+          <label htmlFor='adminpanelgif' className='text-port-light-gray text-sm mt-2 self-center mb-4'><i>How the admin panel looks</i></label>
         </div>
 
 
