@@ -9,7 +9,7 @@ const LangSwitch = () => {
 
   useEffect(()=> {
     const goToLocale = (newLocale:string) => {
-      document.cookie=`NEXT_LOCALE=${newLocale}`
+      document.cookie=`NEXT_LOCALE=${newLocale}; expires=Fri, 31 Dec 9999 23:59:59 GMT`
       router.push(asPath, asPath, { locale: newLocale })
     }
     

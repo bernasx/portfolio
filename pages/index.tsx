@@ -19,7 +19,7 @@ const Home: NextPage = () => {
 
   return (
     <Layout>
-      <div className='grid grid-cols-1 md:grid-cols-3 w-full fit-screen'>
+      <div className='grid grid-cols-1 md:grid-cols-3 w-full'>
         <div className='flex flex-col justify-start items-center'>
           <div>
             <div className='flex flex-row lg:flex-col'>

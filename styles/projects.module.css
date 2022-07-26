@@ -1,4 +1,0 @@
-.projectsgrid {
-    @apply grid m-8 lg:m-12 gap-2;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
-}

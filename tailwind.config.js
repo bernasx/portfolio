@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       minHeight: {
         '8': '32px',
+        '80': '320px'
       },
       minWidth: {
         '8': '32px',
@@ -26,6 +27,11 @@ module.exports = {
       'port-link-blue-hover':'#60A2E0',
       'port-dark-blue':'#1E293B',
       'port-darker-blue':'#121720',
+      'port-darker-blue-hover':'#171D29',
+      'port-status-live':'#60E179',
+      'port-status-complete':'#EBE654',
+      'port-status-prototype':'#E8AC44',
+      'port-status-incomplete':'#E63232'
     }
   },
   plugins: [],
