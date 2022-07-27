@@ -13,8 +13,8 @@ type Props = {
 
 const Layout = ({ children, title = 'Portfolio' }: Props) => {
     // basicClass is the class for all non active elements in the navbar
-    const basicClass = 'text-port-dark-gray dark:text-port-faded-gray flex items-center px-3 md:px-4 h-11 md:h-14 text-center text-md md:text-xl hover:text-port-dark-green dark:hover:text-port-light-green'
-    const activeClass = `text-white bg-port-light-green flex items-center px-3 md:px-4 h-11 md:h-14 text-center text-md md:text-xl hover:bg-port-light-green dark:hover:bg-port-dark-green`
+    const basicClass = 'text-port-dark-gray dark:text-port-faded-gray flex items-center px-3 md:px-4 h-11 md:h-14 text-center text-sm md:text-xl hover:text-port-dark-green dark:hover:text-port-light-green'
+    const activeClass = `text-white bg-port-light-green flex items-center px-3 md:px-4 h-11 md:h-14 text-center text-sm md:text-xl hover:bg-port-light-green dark:hover:bg-port-dark-green`
     const router = useRouter();
     const {t} = useTranslation();
     return (
@@ -35,12 +35,8 @@ const Layout = ({ children, title = 'Portfolio' }: Props) => {
           </Link>
 
           <Link href="/contacts">
-            <a className={router.pathname == "/contacts" ? activeClass : basicClass} >{t('common:nav_contacts')}</a>
-          </Link>
-
-          <Link href="/blog">
-            <a className={router.pathname == "/blog" ? `${activeClass} rounded-br-3xl` : basicClass}>{t('common:nav_blog')}</a>
-          </Link>         
+            <a className={router.pathname == "/contacts" ?  `${activeClass} rounded-br-3xl` : basicClass} >{t('common:nav_contacts')}</a>
+          </Link>       
         </nav>
         <div className='flex flex-col m-2 md:m-4 space-y-2'>
             <LangSwitch></LangSwitch>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { useTranslation } from 'next-i18next'
+import {Fragment} from "react";
+
 type Props = {
     title: string,
     status: string,
@@ -13,22 +15,22 @@ type Props = {
 const ProjectCard = ({ title, status, stack, description, url, img_url, img_alt }: Props) => {
     const { t } = useTranslation();
 
-    let badgeClass = ''
+    let badgeClass = 'p-1 w-24 text-center self-center text-port-dark-gray rounded-md text-sm font-bold'
     switch (status) {
         case 'common:status_live':
-            badgeClass = 'p-1 w-24 text-center bg-port-status-live text-port-dark-gray rounded-md text-sm font-bold'
+            badgeClass += ' bg-port-status-live'
             break;
         case 'common:status_complete':
-            badgeClass = 'p-1 w-24 text-center   bg-port-status-complete text-port-dark-gray rounded-md text-sm font-bold'
+            badgeClass += ' bg-port-status-complete'
             break;
         case 'common:status_incomplete':
-            badgeClass = 'p-1 w-24 text-center  bg-port-status-incomplete text-port-dark-gray rounded-md text-sm font-bold'
+            badgeClass += ' bg-port-status-incomplete'
             break;
         case 'common:status_prototype':
-            badgeClass = 'p-1 w-24  text-center  bg-port-status-prototype text-port-dark-gray rounded-md text-sm font-bold'
+            badgeClass += ' bg-port-status-prototype'
             break;
         default:
-            badgeClass = 'p-1 w-24 text-center  bg-port-status-incomplete text-port-dark-gray rounded-md text-sm font-bold'
+            badgeClass += ' bg-port-status-incomplete'
             break;
     }
 
@@ -36,14 +38,12 @@ const ProjectCard = ({ title, status, stack, description, url, img_url, img_alt 
 
         if (index === stack.length - 1) { return tech };
 
-        // eslint-disable-next-line react/jsx-key
-        return <> {tech} <span className='text-port-light-green'>/</span> </>
+        return <Fragment key={`${index}_${title}`}> {tech} <span className='text-port-light-green'>/</span> </Fragment>
 
     })
 
     return (
         <a href={url} target="_blank" rel="noreferrer" className='flex flex-col w-auto min-h-80 h-auto bg-port-darker-blue rounded-xl p-4 hover:bg-port-darker-blue-hover'>
-
             <div className='flex w-full justify-between'>
                 <h3 className='text-port-light-green'>{title}</h3>
                 <span className={badgeClass}>{t(status)}</span>
