@@ -41,7 +41,7 @@ const Home: NextPage = () => {
 
         </div>
 
-        <div className='flex flex-col justify-start items-center md:mt-40 mt-12 md:mb-8'>
+        <div className='flex flex-col justify-start items-center md:mt-40 mt-12'>
           <Image src="/mainphoto.png" width={212} height={212} alt='Photo of Bernardo' className='rounded-full'></Image>
           <h1 className='mt-4 text-2xl text-port-dark-green'>{t('about:about_me')}</h1>
           <p className='mt-4 text-xl text-center break-words w-3/4 max-w-xs'>
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        <div className='flex flex-col justify-start  items-center md:mt-24 mt-12 mb-4'>
+        <div className='flex flex-col justify-start  items-center md:mt-24 mt-12'>
           <h1 className='mt-4 text-2xl text-port-dark-green'>{t('about:about_portfolio')}</h1>
 
           <ul className='md:mt-4 max-w-ws mr-4 flex flex-col items-end mb-4'>

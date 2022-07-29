@@ -11,6 +11,11 @@ body {
   @apply bg-white dark:bg-port-dark-blue;
 }
 
+.fit-screen {
+  min-height: calc(100vh - 104px);
+  @apply flex flex-col justify-between;
+}
+
 a {
   color: inherit;
   text-decoration: none;

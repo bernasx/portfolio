@@ -30,7 +30,7 @@ const ThemeSwitch = () => {
 
   let switchClass = `${enabled ? 'bg-blue-600' : 'bg-gray-200'} relative inline-flex h-8 w-16 items-center rounded-md bg-port-superlight-green dark:bg-port-darker-blue`
   let switchIconClass =  `${enabled ? 'translate-x-8' : 'translate-x-1'} inline-block h-7 w-7 transform rounded-md bg-port-light-green`
-
+  
   if(width! < 375) {
     switchClass = `${enabled ? 'bg-blue-600' : 'bg-gray-200'} relative inline-flex h-7 w-14 items-center rounded-md bg-port-superlight-green dark:bg-port-darker-blue`
     switchIconClass =  `${enabled ? 'translate-x-7' : 'translate-x-1'} inline-block h-6 w-6 transform rounded-md bg-port-light-green`
