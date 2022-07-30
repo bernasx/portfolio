@@ -39,7 +39,8 @@
             "Next.JS",
             "Bulma",
             "Chart.JS",
-            "MongoDB"
+            "MongoDB",
+            "SWR"
         ]
     }
 ]

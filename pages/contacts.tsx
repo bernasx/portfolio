@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Layout from '../components/portfolio/layout/index'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import LinkAnchor from '../components/portfolio/link-anchor'
 const Projects: NextPage = () => {
     const { t } = useTranslation();
 
@@ -17,8 +18,9 @@ const Projects: NextPage = () => {
 
 
                     <div className='ml-6 lg:ml-16 flex flex-col mt-4'>
-                        <p>{t('contacts:hiring_linkedin')} <a className='text-port-link-blue hover:text-port-link-blue-hover' href="https://www.linkedin.com/in/bernardoribeiro99/" target="_blank" rel="noreferrer"> Linkedin</a></p>
-                        <a>{t('contacts:hiring_email')} <span className='text-port-link-blue hover:text-port-link-blue-hover'>bernardo.ribeiro99@gmail.com</span></a>
+                       
+                        <p>{t('contacts:hiring_linkedin')}  <LinkAnchor url='https://www.linkedin.com/in/bernardoribeiro99/' content='Linkedin'></LinkAnchor> </p>
+                        <p>{t('contacts:hiring_email')} <LinkAnchor url='' content='bernardo.ribeiro99@gmail.com'></LinkAnchor></p>
                         <br></br>
                         <br></br>
                         <p>{t('contacts:hiring_alternatives')}</p>
@@ -33,7 +35,7 @@ const Projects: NextPage = () => {
                         <p>{t('contacts:opensource_help')}
                             <br></br>
                             <br></br>
-                            {t('contacts:opensource_github')} <a href="https://www.github.com/bernasx" className='text-port-link-blue hover:text-port-link-blue-hover' target="_blank" rel="noreferrer">www.github.com/bernasx</a>.
+                            {t('contacts:opensource_github')} <LinkAnchor url='https://github.com/bernasx' content='https://github.com/bernasx'></LinkAnchor>.
                         </p>
                     </div>
                 </div>

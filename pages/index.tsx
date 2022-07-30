@@ -6,6 +6,7 @@ import { TerminalIcon, UserIcon, CodeIcon, TemplateIcon, GlobeIcon } from '@hero
 import useWindowSize from '../lib/useWindowSize'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import LinkAnchor from '../components/portfolio/link-anchor'
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
     props:{
@@ -31,10 +32,10 @@ const Home: NextPage = () => {
             <h2 className='text-3xl md:mt-4'>{t('about:fullstack')}</h2>
 
             <ul className='md:mt-4 ml-4 md:ml-12 list-disc marker:text-port-light-green'>
-              <li className='text-xl'>JavaScript <span className='text-port-light-green'>/</span> TypeScript <span className='text-port-light-green'>/</span> Python</li>
-              <li className='text-xl'>React <span className='text-port-light-green'>/</span> Next.JS <span className='text-port-light-green'>/</span> Django</li>
-              <li className='text-xl'>Tailwind <span className='text-port-light-green'>/</span> Bootstrap <span className='text-port-light-green'>/</span> Bulma</li>
-              <li className='text-xl'>Photoshop <span className='text-port-light-green'>/</span> Premiere <span className='text-port-light-green'>/</span> XD</li>
+              <li className='text-xl'>JavaScript <span className='text-port-light-green font-bold'>/</span> TypeScript <span className='text-port-light-green font-bold'>/</span> Python</li>
+              <li className='text-xl'>React <span className='text-port-light-green font-bold'>/</span> Next.JS <span className='text-port-light-green font-bold'>/</span> Django</li>
+              <li className='text-xl'>Tailwind <span className='text-port-light-green font-bold'>/</span> Bootstrap <span className='text-port-light-green font-bold'>/</span> Bulma</li>
+              <li className='text-xl'>Photoshop <span className='text-port-light-green font-bold'>/</span> Premiere <span className='text-port-light-green font-bold'>/</span> XD</li>
             </ul>
 
           </div>
@@ -45,7 +46,7 @@ const Home: NextPage = () => {
           <Image src="/mainphoto.png" width={212} height={212} alt='Photo of Bernardo' className='rounded-full'></Image>
           <h1 className='mt-4 text-2xl text-port-dark-green'>{t('about:about_me')}</h1>
           <p className='mt-4 text-xl text-center break-words w-3/4 max-w-xs'>
-          {t('about:about_degree')} <a href="https://istec-porto.pt/" target="_blank" rel="noreferrer" className='text-port-link-blue hover:text-port-link-blue-hover'>@istec</a>.
+          {t('about:about_degree')} <LinkAnchor content='@ISTEC' url='https://istec-porto.pt/'></LinkAnchor>.
             <br />
             <br />
             {t('about:about_me_1')} <br />{t('about:about_me_2')}
@@ -68,7 +69,7 @@ const Home: NextPage = () => {
               <div className='max-w-md'>
               {t('about:portfolio_xd')}
                 <br></br>
-                <a href="https://istec-porto.pt/" target="_blank" rel="noreferrer" className='text-port-link-blue hover:text-port-link-blue-hover'> {t('about:portfolio_xd_link')}</a>
+                <LinkAnchor url='https://drive.google.com/file/d/19uYgkE3M997NFyziuX2HBo6fdd-Rru_u/view?usp=sharing' content={t('about:portfolio_xd_link')}></LinkAnchor>
               </div>
               <UserIcon className='ml-2 h-8 w-8 min-h-8 min-w-8 inline text-port-dark-green'></UserIcon>
             </li>
@@ -83,7 +84,7 @@ const Home: NextPage = () => {
             <li className='mt-4 break-words text-right flex items-center'>
               <div className='max-w-md'>
               {t('about:portfolio_style_1')}
-                <a href="https://istec-porto.pt/" target="_blank" rel="noreferrer" className='text-port-link-blue hover:text-port-link-blue-hover'> heroicons.com</a>
+                <LinkAnchor url='https://heroicons.com/' content=' heroicons.com'></LinkAnchor>
                 <br></br>
                 {t('about:portfolio_style_2')}
               </div>

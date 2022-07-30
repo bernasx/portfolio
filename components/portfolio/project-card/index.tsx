@@ -38,20 +38,20 @@ const ProjectCard = ({ title, status, stack, description, url, img_url, img_alt 
 
         if (index === stack.length - 1) { return tech };
 
-        return <Fragment key={`${index}_${title}`}> {tech} <span className='text-port-light-green'>/</span> </Fragment>
+        return <Fragment key={`${index}_${title}`}> {tech} <span className='text-port-dark-green font-bold dark:font-normal dark:text-port-light-green'>/</span> </Fragment>
 
     })
 
     return (
-        <a href={url} target="_blank" rel="noreferrer" className='flex flex-col w-auto min-h-80 h-auto bg-port-darker-blue rounded-xl p-4 hover:bg-port-darker-blue-hover'>
+        <a href={url} target="_blank" rel="noreferrer" className='flex flex-col w-auto min-h-80 h-auto bg-port-superlight-green  dark:bg-port-darker-blue rounded-xl p-4 dark:hover:bg-port-darker-blue-hover'>
             <div className='flex w-full justify-between'>
-                <h3 className='text-port-light-green'>{title}</h3>
+                <h3 className='font-bold text-port-dark-green dark:text-port-light-green'>{title}</h3>
                 <span className={badgeClass}>{t(status)}</span>
             </div>
-            <h4 className='text-md'>{stackComponents}</h4>
+            <h4 className='text-md text-faded-gray'>{stackComponents}</h4>
 
             <div className='flex flex-col lg:justify-between lg:flex-row mt-2'>
-                <p className='mb-2 lg:w-3/4'>
+                <p className='mb-2 lg:w-3/4 text-faded-gray'>
                     {t(description)}
                 </p>
 
