@@ -4,7 +4,7 @@
         "status":"common:status_live",
         "description":"projects:zigzag_description",
         "url":"https://github.com/bernasx",
-        "img_url":"/projects/zigzag_project.png",
+        "img_url":"/projects/zigzag_project.jpg",
         "img_alt":"projects:zigzag_alt",
         "stack": [
             "Next.JS",
