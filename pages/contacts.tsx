@@ -11,30 +11,29 @@ const Projects: NextPage = () => {
 
                 <div>
                     <div className='ml-4 lg:ml-12 flex flex-col'>
-                        <h1 className='text-4xl text-port-light-green'>For hiring purposes?</h1>
-                        <h2 className='text-2xl text-port-white mt-4 lg:mt-1'>I am looking for work!</h2>
+                        <h1 className='text-4xl text-port-light-green'>{t('contacts:hiring_title')}</h1>
+                        <h2 className='text-2xl text-port-white mt-4 lg:mt-1'>{t('contacts:hiring_subtitle')}</h2>
                     </div>
 
 
                     <div className='ml-6 lg:ml-16 flex flex-col mt-4'>
-                        <p>Send me a message on <a className='text-port-link-blue hover:text-port-link-blue-hover' href="https://www.linkedin.com/in/bernardoribeiro99/" target="_blank" rel="noreferrer"> Linkedin</a></p>
-                        <a>Email me at <span className='text-port-link-blue hover:text-port-link-blue-hover'>bernardo.ribeiro99@gmail.com</span></a>
+                        <p>{t('contacts:hiring_linkedin')} <a className='text-port-link-blue hover:text-port-link-blue-hover' href="https://www.linkedin.com/in/bernardoribeiro99/" target="_blank" rel="noreferrer"> Linkedin</a></p>
+                        <a>{t('contacts:hiring_email')} <span className='text-port-link-blue hover:text-port-link-blue-hover'>bernardo.ribeiro99@gmail.com</span></a>
                         <br></br>
                         <br></br>
-                        <p>Let me know if you wish to talk through Skype / Whatsapp or any other alternative app!</p>
+                        <p>{t('contacts:hiring_alternatives')}</p>
                     </div>
 
                     <div className='ml-4 lg:ml-12 mt-8 lg:mt-12 flex flex-col'>
-                        <h1 className='text-4xl text-port-light-green'>For any questions about my open-source code.</h1>
-                        <h2 className='text-2xl text-port-white mt-4 lg:mt-1'>Contributions, help requests etc...</h2>
+                        <h1 className='text-4xl text-port-light-green'>{t('contacts:opensource_title')}</h1>
+                        <h2 className='text-2xl text-port-white mt-4 lg:mt-1'>{t('contacts:opensource_subtitle')}</h2>
                     </div>
 
-                    <div className='ml-6 lg:ml-16 flex flex-col mt-4'>
-                        <p>If you need help with something or would like to contribute to my projects, <br></br>
-                            please use the appropriate channels by opening a pull request or a new issue.
+                    <div className='ml-6 lg:ml-16 flex flex-col mt-4 max-w-xl'>
+                        <p>{t('contacts:opensource_help')}
                             <br></br>
                             <br></br>
-                            All my code is available on github at <a href="https://www.github.com/bernasx" className='text-port-link-blue hover:text-port-link-blue-hover' target="_blank" rel="noreferrer">www.github.com/bernasx</a>.
+                            {t('contacts:opensource_github')} <a href="https://www.github.com/bernasx" className='text-port-link-blue hover:text-port-link-blue-hover' target="_blank" rel="noreferrer">www.github.com/bernasx</a>.
                         </p>
                     </div>
                 </div>
