@@ -32,7 +32,7 @@
         "title":"AnimeListStats",
         "status":"common:status_prototype",
         "description":"projects:animeliststats_description",
-        "url":"https://github.com/bernasx",
+        "url":"https://github.com/bernasx/animeliststats",
         "img_url":"/projects/animeliststats_project.png",
         "img_alt":"projects:animeliststats_alt",
         "stack": [
