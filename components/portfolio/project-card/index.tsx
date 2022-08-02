@@ -45,7 +45,7 @@ const ProjectCard = ({ title, status, stack, description, url, github_url, img_u
     })
 
     return (
-        <div className='flex flex-col w-auto min-h-80 h-auto bg-port-superlight-green  dark:bg-port-darker-blue rounded-xl p-4 dark:hover:bg-port-darker-blue-hover'>
+        <div className='flex flex-col w-auto min-h-80 h-auto bg-port-superlight-green hover:bg-port-superlight-green-hover  dark:bg-port-darker-blue rounded-xl p-4 dark:hover:bg-port-darker-blue-hover'>
             <div className='flex w-full justify-between'>
                 <h3 className='font-bold text-port-dark-green dark:text-port-light-green'>{title}</h3>
                 <span className={badgeClass}>{t(status)}</span>
@@ -53,7 +53,7 @@ const ProjectCard = ({ title, status, stack, description, url, github_url, img_u
             <h4 className='text-md text-faded-gray'>{stackComponents}</h4>
 
             <div className='flex flex-col lg:justify-between lg:flex-row mt-2'>
-                <p className='mb-2 lg:w-3/4 text-faded-gray'>
+                <p className='mb-2 mr-1 lg:w-3/4 text-faded-gray'>
                     {t(description)}
                 </p>
 

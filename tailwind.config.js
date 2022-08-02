@@ -22,6 +22,7 @@ module.exports = {
       'port-faded-gray':'#8E8E8E',
       'port-light-gray': '#DBDBDB',
       'port-superlight-green':'#CBE9E4',
+      'port-superlight-green-hover':'#BAE2DB',
       'port-dark-gray':'#292B2E',
       'port-link-blue':'#7AB8F6',
       'port-link-blue-hover':'#60A2E0',
