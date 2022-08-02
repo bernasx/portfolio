@@ -15,6 +15,7 @@ const Projects: NextPage = () => {
       status={project.status}
       description={project.description}
       url={project.url}
+      github_url={project.github_url}
       img_url={project.img_url}
       img_alt={project.img_alt}
       stack={project.stack}

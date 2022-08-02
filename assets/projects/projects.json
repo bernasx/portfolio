@@ -3,7 +3,8 @@
         "title":"ZigZag Studio",
         "status":"common:status_live",
         "description":"projects:zigzag_description",
-        "url":"https://github.com/bernasx",
+        "url":"https://www.google.com",
+        "github_url":"https://github.com/bernasx",
         "img_url":"/projects/zigzag_project.jpg",
         "img_alt":"projects:zigzag_alt",
         "stack": [
@@ -15,10 +16,27 @@
         ]
     },
     {
+        "title":"Portfolio",
+        "status":"common:status_live",
+        "description":"projects:portfolio_description",
+        "url":"",
+        "github_url":"https://github.com/bernasx/portfolio",
+        "img_url":"/projects/portfolio_project.png",
+        "img_alt":"projects:animeliststats_alt",
+        "stack": [
+            "Next.JS",
+            "Tailwind",
+            "Headless UI",
+            "i18next",
+            "Next-Themes"
+        ]
+    },
+    {
         "title":"Django-Netflix-Clone",
         "status":"common:status_complete",
         "description":"projects:djangonetflix_description",
-        "url":"https://github.com/bernasx/netflixclone-django",
+        "url":"",
+        "github_url":"https://github.com/bernasx/netflixclone-django",
         "img_url":"/projects/djangonetflix_project.png",
         "img_alt":"projects:djangonetflix_alt",
         "stack": [
@@ -32,7 +50,8 @@
         "title":"AnimeListStats",
         "status":"common:status_prototype",
         "description":"projects:animeliststats_description",
-        "url":"https://github.com/bernasx/animeliststats",
+        "url":"",
+        "github_url":"https://github.com/bernasx/animeliststats",
         "img_url":"/projects/animeliststats_project.png",
         "img_alt":"projects:animeliststats_alt",
         "stack": [
@@ -43,4 +62,5 @@
             "SWR"
         ]
     }
+    
 ]

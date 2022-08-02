@@ -93,22 +93,13 @@ const Home: NextPage = () => {
 
             <li className='mt-4 break-words text-right flex items-center'>
               <div className='max-w-md'>
-              {t('about:portfolio_admin')}
-              </div>
-              <TerminalIcon className='ml-2 h-8 w-8 min-h-8 min-w-8 inline text-port-dark-green'></TerminalIcon>
-            </li>
-
-            <li className='mt-4 break-words text-right flex items-center'>
-              <div className='max-w-md'>
               {t('about:portfolio_translation')}
               </div>
               <GlobeIcon className='ml-2 h-8 w-8 min-h-8 min-w-8 inline text-port-dark-green'></GlobeIcon>
             </li>
 
           </ul>
-
-          <Image id='adminpanelgif' src="/adminpanel.gif" width={540} height={288} alt='Gif of Admin Panel' className='rounded-xl'></Image>
-          <label htmlFor='adminpanelgif' className='text-port-light-gray text-sm mt-2 self-center mb-4'><i>How the admin panel looks</i></label>
+          
         </div>
 
 

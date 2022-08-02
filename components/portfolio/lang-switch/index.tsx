@@ -6,13 +6,13 @@ import useWindowSize from '../../../lib/useWindowSize'
 const LangSwitch = () => {
   const { locale, asPath } = useRouter();
   const [enabled, setEnabled] = useState(locale === 'en' ? false : true)
-  const router = useRouter();
+  const {push} = useRouter();
   const {width} = useWindowSize() // we have to use this here because tailwind does not support breakpoints for translate
 
   useEffect(()=> {
     const goToLocale = (newLocale:string) => {
       document.cookie=`NEXT_LOCALE=${newLocale}; expires=Fri, 31 Dec 9999 23:59:59 GMT`
-      router.push(asPath, asPath, { locale: newLocale })
+      push(asPath, asPath, { locale: newLocale })
     }
     if(enabled){
       // PT
@@ -21,6 +21,9 @@ const LangSwitch = () => {
       // EN
       goToLocale('en');
     }
+
+  // we disable this here because router changes with every render
+  // this is not intended behavior apparently <https://stackoverflow.com/questions/69203538/useeffect-dependencies-when-using-nextjs-router>
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[enabled])
 
