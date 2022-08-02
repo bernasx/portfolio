@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
-import Layout from '../components/portfolio/layout/index'
 import Image from 'next/image'
 import { ArrowLeftIcon, ArrowDownIcon } from '@heroicons/react/solid'
-import { TerminalIcon, UserIcon, CodeIcon, TemplateIcon, GlobeIcon } from '@heroicons/react/outline'
+import { UserIcon, CodeIcon, TemplateIcon, GlobeIcon } from '@heroicons/react/outline'
 import useWindowSize from '../lib/useWindowSize'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
@@ -19,7 +18,6 @@ const Home: NextPage = () => {
   const {t} = useTranslation();
 
   return (
-    <Layout>
       <div className='grid grid-cols-1 md:grid-cols-3 w-full'>
         <div className='flex flex-col justify-start items-center'>
           <div>
@@ -104,7 +102,6 @@ const Home: NextPage = () => {
 
 
       </div>
-    </Layout>
   )
 }
 
