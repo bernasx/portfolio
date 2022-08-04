@@ -18,7 +18,7 @@ const Projects: NextPage = () => {
                 <div className='ml-6 lg:ml-16 flex flex-col mt-4'>
 
                     <p>{t('contacts:hiring_linkedin')}  <LinkAnchor url='https://www.linkedin.com/in/bernardoribeiro99/' content='Linkedin'></LinkAnchor> </p>
-                    <p>{t('contacts:hiring_email')} <LinkAnchor url='' content='bernardo.ribeiro99@gmail.com'></LinkAnchor></p>
+                    <p>{t('contacts:hiring_email')} <LinkAnchor url='' content='bernardo.ribeiro.work@gmail.com'></LinkAnchor></p>
                     <br></br>
                     <br></br>
                     <p>{t('contacts:hiring_alternatives')}</p>
