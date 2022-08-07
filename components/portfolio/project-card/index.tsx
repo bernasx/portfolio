@@ -67,7 +67,8 @@ const ProjectCard = ({ title, status, stack, description, url, github_url, img_u
                     {t(description)}
                 </p>
 
-                <Image onClick={openModal} src={img_url} width={256} height={256} alt={img_alt} className='rounded-md mt-2 object-cover'></Image>
+                <Image onClick={openModal} src={img_url} width={256} height={256} alt={img_alt} 
+                className='rounded-md mt-2 object-cover hover:opacity-70 cursor-pointer'/>
 
             </div>
             <div className="flex flex-row gap-x-4 mt-2">
