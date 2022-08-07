@@ -18,6 +18,7 @@ const Projects: NextPage = () => {
       img_url={project.img_url}
       img_alt={project.img_alt}
       stack={project.stack}
+      featured={project.featured}
     />)
 
   return (

@@ -7,6 +7,7 @@
         "github_url":"https://github.com/bernasx",
         "img_url":"/projects/zigzag_project.jpg",
         "img_alt":"projects:zigzag_alt",
+        "featured":true,
         "stack": [
             "Next.JS",
             "Tailwind",
@@ -23,27 +24,13 @@
         "github_url":"https://github.com/bernasx/portfolio",
         "img_url":"/projects/portfolio_project.png",
         "img_alt":"projects:animeliststats_alt",
+        "featured":false,
         "stack": [
             "Next.JS",
             "Tailwind",
             "Headless UI",
             "i18next",
             "Next-Themes"
-        ]
-    },
-    {
-        "title":"Django-Netflix-Clone",
-        "status":"common:status_complete",
-        "description":"projects:djangonetflix_description",
-        "url":"",
-        "github_url":"https://github.com/bernasx/netflixclone-django",
-        "img_url":"/projects/djangonetflix_project.png",
-        "img_alt":"projects:djangonetflix_alt",
-        "stack": [
-            "Django",
-            "Python",
-            "SQLite",
-            "Bootstrap"
         ]
     },
     {
@@ -54,6 +41,7 @@
         "github_url":"https://github.com/bernasx/animeliststats",
         "img_url":"/projects/animeliststats_project.png",
         "img_alt":"projects:animeliststats_alt",
+        "featured":false,
         "stack": [
             "Next.JS",
             "Bulma",
@@ -61,6 +49,21 @@
             "MongoDB",
             "SWR"
         ]
+    },
+    {
+        "title":"Django-Netflix-Clone",
+        "status":"common:status_complete",
+        "description":"projects:djangonetflix_description",
+        "url":"",
+        "github_url":"https://github.com/bernasx/netflixclone-django",
+        "img_url":"/projects/djangonetflix_project.png",
+        "img_alt":"projects:djangonetflix_alt",
+        "featured":true,
+        "stack": [
+            "Django",
+            "Python",
+            "SQLite",
+            "Bootstrap"
+        ]
     }
-    
 ]
