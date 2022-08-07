@@ -14,17 +14,15 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
 })
 
 const Home: NextPage = () => {
-  const {width } = useWindowSize();
+  const {width} = useWindowSize();
   const {t} = useTranslation();
 
   return (
       <div className='grid grid-cols-1 md:grid-cols-3 w-full'>
         <div className='flex flex-col justify-start items-center'>
-          <div>
-            <div className='flex flex-row lg:flex-col'>
-              <h1 className='font-bold text-4xl lg:text-8xl text-port-dark-green dark:text-port-light-green'>Bernardo</h1>
-              {width! <= 1024 && <span>&nbsp;</span>}
-              <h1 className='font-bold text-4xl lg:text-8xl text-port-dark-green dark:text-port-light-green'>Ribeiro</h1>
+          <div className='ml-2'>
+            <div className='flex flex-col lg:table-caption lg:-ml-2'>
+              <h1 className='font-bold text-4xl lg:text-6xl xl:text-8xl text-port-dark-green dark:text-port-light-green'>Bernardo Ribeiro</h1>
             </div>
             
             <h2 className='text-3xl md:mt-4'>{t('about:fullstack')}</h2>
