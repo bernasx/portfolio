@@ -17,6 +17,7 @@ module.exports = {
     },
     colors: {
       'white':'white',
+      'orange':'#FF7D00',
       'port-light-green':'#25C28D',
       'port-dark-green':'#20AF82',
       'port-faded-gray':'#8E8E8E',

@@ -60,7 +60,7 @@ const ProjectCard = ({ title, status, stack, description, url, github_url, img_u
         <div className={`flex flex-col w-auto min-h-80 h-auto 
         bg-port-superlight-green hover:bg-port-superlight-green-hover  dark:bg-port-darker-blue rounded-xl p-4
          dark:hover:bg-port-darker-blue-hover
-         ${featured && 'border-t-[24px] border-t-port-status-prototype'}`}>
+         ${featured && 'border-t-[24px] border-t-orange'}`}>
 
             {featured && <h4 className="relative text-center -top-10 text-white -mb-8">{t('projects:featured')}</h4>}
 
