@@ -20,7 +20,6 @@ type Props = {
 const ProjectCard = ({ title, status, stack, description, url, github_url, img_url, img_alt, featured }: Props) => {
     const { t } = useTranslation();
     let [isOpen, setIsOpen] = useState(false);
-    
     function closeModal() {
         setIsOpen(false)
     }
@@ -57,8 +56,8 @@ const ProjectCard = ({ title, status, stack, description, url, github_url, img_u
     })
 
     return (
-        <div className={`flex flex-col w-auto min-h-80 h-auto 
-        bg-port-superlight-green hover:bg-port-superlight-green-hover  dark:bg-port-darker-blue rounded-xl p-4
+        <div className={`flex flex-col w-auto min-h-80 h-auto
+        bg-port-superlight-green hover:bg-port-superlight-green-hover dark:bg-port-darker-blue rounded-xl p-4
          dark:hover:bg-port-darker-blue-hover
          ${featured && 'border-t-[24px] border-t-orange'}`}>
 
